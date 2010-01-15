@@ -1,0 +1,41 @@
+---
+name: Module-JSAN
+version: 0.01
+author:
+  - 'Nickolay Platonov, <nplatonov at cpan.org>'
+  - 'Nickolay Platonov <nplatonov@cpan.org>'
+abstract: Build JavaScript distributions for JSAN
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+build_requires:
+  Capture::Tiny: 0.06
+  File::Path: 0
+  Module::Build: 0.20
+  Test::Compile: 0
+  Test::More: 0
+requires:
+  Module::Build::Functions: 0.02
+  Module::Build::JSAN::Installable: 0.05
+configure_requires:
+  Module::Build: 0.35
+provides:
+  Module::JSAN:
+    file: lib/Module/JSAN.pm
+    version: 0.01
+  Module::JSAN::DSL:
+    file: lib/Module/JSAN/DSL.pm
+    version: 0.01
+  Module::JSAN::Tutorial:
+    file: lib/Module/JSAN/Tutorial.pm
+    version: 0.01
+  inc::Module::JSAN:
+    file: lib/inc/Module/JSAN.pm
+    version: 0.01
+  inc::Module::JSAN::DSL:
+    file: lib/Module/JSAN/DSL.pm
+    version: 0
+generated_by: Module::Build version 0.35
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
