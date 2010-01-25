@@ -18,21 +18,18 @@ meta-spec:
   version: 1.4
 name: Module-JSAN
 provides:
-  Module::Build::JSAN::Installable:
-    file: lib/Module/inc/Module/Build/JSAN/Installable.pm
-    version: 0.09
   Module::JSAN:
     file: lib/Module/JSAN.pm
-    version: 0.02
+    version: 0.03
   Module::JSAN::DSL:
     file: lib/Module/JSAN/DSL.pm
-    version: 0.01
+    version: 0.03
   Module::JSAN::Tutorial:
     file: lib/Module/JSAN/Tutorial.pm
-    version: 0.01
+    version: 0.03
   inc::Module::JSAN:
     file: lib/inc/Module/JSAN.pm
-    version: 0.01
+    version: 0.03
   inc::Module::JSAN::DSL:
     file: lib/Module/JSAN/DSL.pm
     version: 0
@@ -41,4 +38,4 @@ requires:
   Module::Build::JSAN::Installable: 0.09
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03
